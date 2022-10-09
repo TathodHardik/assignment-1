@@ -1,7 +1,7 @@
 pipeline{
    agent{
 
-         label 'built-in'
+         label '172.31.47.128'
          customWorkspace '/project'
 }
    stages{
