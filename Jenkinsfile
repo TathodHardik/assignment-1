@@ -1,8 +1,9 @@
 pipeline{
    agent{
-
+      label {
          label '172.31.47.128'
          customWorkspace '/project'
+  }
 }
    stages{
        stage('install httpd'){
