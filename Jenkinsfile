@@ -13,7 +13,8 @@ pipeline{
              }
           } 
        stage('copy the file'){
-          steps{           
+          steps{   
+             sh"chmod -R 777 /home "
              sh"cp -r /home/ec2-user/project/* /var/www/html/"
              sh" chmod 777 /var/www/html/index.html" 
               }
