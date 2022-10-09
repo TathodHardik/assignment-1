@@ -1,9 +1,10 @@
 pipeline{
    agent{
-
+      label {
          label 'Built-In Node'
          customWorkspace '/project'
-}
+      }
+   }
    stages{
        stage('install httpd'){
           steps{
