@@ -1,7 +1,7 @@
 pipeline{
    agent{
       label {
-         label '172.31.47.128'
+         label '172.31.33.31'
          customWorkspace '/home/ec2-user/project/'
       }
    }
@@ -13,8 +13,7 @@ pipeline{
              }
           } 
        stage('copy the file'){
-         steps{
-             sh"chmod 777 -R /var"            
+          steps{           
              sh"cp -r /home/ec2-user/project/* /var/www/html/"
              sh" chmod 777 /var/www/html/index.html" 
               }
