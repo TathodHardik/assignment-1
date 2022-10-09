@@ -2,7 +2,7 @@ pipeline{
    agent{
       label {
          label '172.31.47.128'
-         customWorkspace '/home/ec2-user/project'
+         customWorkspace '/home/ec2-user/project/'
       }
    }
    stages{
